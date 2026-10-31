@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Star, Rocket, Sparkles, Volume2, VolumeX, CheckCircle2, Smile, Sun, ArrowLeft } from 'lucide-react';
 import { MissionType, MORNING_SURPRISES, WAKE_MISSIONS } from '../data/morningData';
 import { MelodyId, soundEngine } from '../utils/soundEngine';
+import captainAstroImg from '../assets/images/captain_astro_mascot_1793475758461.jpg';
+import morningPlanetBaseImg from '../assets/images/morning_planet_base_1793475759223.jpg';
 
 interface WakeUpMissionModalProps {
   isOpen: boolean;
@@ -191,7 +193,7 @@ export const WakeUpMissionModal: React.FC<WakeUpMissionModalProps> = ({
           <div className="flex items-center gap-3.5">
             <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-amber-400 bg-amber-100 shrink-0">
               <img
-                src="/src/assets/images/captain_astro_mascot_1793475758461.jpg"
+                src={captainAstroImg}
                 alt="קפטן אסטרו"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
@@ -273,7 +275,7 @@ export const WakeUpMissionModal: React.FC<WakeUpMissionModalProps> = ({
                   {/* Interactive Arena */}
                   <div className="relative w-full h-64 rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 select-none">
                     <img
-                      src="/src/assets/images/morning_planet_base_1793475759223.jpg"
+                      src={morningPlanetBaseImg}
                       alt="בסיס השיגור בזריחה"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover opacity-80"

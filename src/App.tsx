@@ -26,6 +26,8 @@ import {
 } from './data/morningData';
 import { MELODIES, MelodyId, soundEngine } from './utils/soundEngine';
 import { WakeUpMissionModal } from './components/WakeUpMissionModal';
+import captainAstroImg from './assets/images/captain_astro_mascot_1793475758461.jpg';
+import rewardTrophyChestImg from './assets/images/reward_trophy_chest_1793475760307.jpg';
 
 const WEEKDAYS = ['א׳', 'ב׳', 'ג׳', 'ד׳', 'ה׳', 'ו׳', 'ש׳'];
 
@@ -442,7 +444,7 @@ export default function App() {
             {/* Left Column (5 cols): Visual Mascot & Launchpad Showcase */}
             <div className="lg:col-span-5 relative rounded-3xl overflow-hidden border border-slate-200 bg-slate-900 min-h-[340px] flex flex-col justify-end">
               <img
-                src="/src/assets/images/captain_astro_mascot_1793475758461.jpg"
+                src={captainAstroImg}
                 alt="קפטן אסטרו כלב החלל המעורר"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover lg:h-full"
@@ -976,7 +978,7 @@ export default function App() {
             {/* Treasure Chest Visual Showcase Card (4 cols) */}
             <div className="lg:col-span-4 rounded-3xl overflow-hidden border border-slate-200 bg-slate-900 relative min-h-[320px] flex flex-col justify-end">
               <img
-                src="/src/assets/images/reward_trophy_chest_1793475760307.jpg"
+                src={rewardTrophyChestImg}
                 alt="תיבת האוצר של קפטן בוקר"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover"
