@@ -1,0 +1,6 @@
+{
+  "name": "קפטן בוקר — שעון מעורר והרפתקאות בוקר לילדים",
+  "description": "אפליקציית שעון מעורר חווייתית ויצירתית לילדים עם משימות השכמה משחקיות, מרוץ התארגנות בוקר ותיבת אוצר משפחתית.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
